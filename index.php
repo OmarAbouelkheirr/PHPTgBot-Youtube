@@ -1,6 +1,6 @@
 
 <?php
-$Tok = '7152436744:AAHqJtzny330Yb2FHK4Nv5R96_WhDoo6S7Y'; // Telegram Bot Token ( From @botfather )
+$Tok = ''; // Telegram Bot Token ( From @botfather )
 define('API_KEY', $Tok);
 function bot($method, $datas = [])
 {
@@ -19,7 +19,7 @@ $message_id =  $message->message_id;
 $name = $message->from->first_name;
 $user = $message->from->username;
 $id = $message->from->id;
-$admin =  1372188096; // Admin ID
+$admin = 1372188096; // Admin ID
 
 if ($text == "/start" and $id != $admin) {
   bot('sendMessage', [
